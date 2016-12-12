@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+using Schnitzeljagd_library;
 namespace Schnitzeljagd_Library
 {
 	public class Question
 	{
 		public String question { get; }
-		public String answer { get; } //regex to match user entered answer
+		public Answer answer { get; } //regex to match user entered answer
+		public Answer user_answer { get; private set;}
 		public String destination { get; }
 		public String hint { get; }
 		public String comment { get; set;}
 		public Question next { get; private set;}
 		public bool solved { get; private set;}
-		public GPS coordinate { get; private set;}
+		public GPS coordinate { get; }
 
 		public Question (String question, String anwser, String destination, String hint, GPS coordinate)
 		{
@@ -34,6 +36,11 @@ namespace Schnitzeljagd_Library
 		{
 			if (user.right == Rights.Leiter)
 				this.next = nextquestion;
+		}
+
+		public void setUserAnswer (Answer uanswer)
+		{
+			this.user_answer = uanswer;
 		}
 
 	}

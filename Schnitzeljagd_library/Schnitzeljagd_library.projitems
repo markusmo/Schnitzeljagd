@@ -13,5 +13,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Question.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Rights.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IAnswer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QRAnswer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WrittenAnswer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NumberAnswer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Answer.cs" />
   </ItemGroup>
 </Project>
