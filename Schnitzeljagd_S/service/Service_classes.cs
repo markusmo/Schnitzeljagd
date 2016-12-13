@@ -5,9 +5,9 @@ using ServiceStack;
 namespace Schnitzeljagd_server
 {
 	[Route ("/api/v1/questions", "GET")]
-	public class GetQuestions : IReturn<SQuestionResponse>{}
+	public class GetQuestions : IReturn<QuestionResponse>{}
 
-	public class SQuestionResponse
+	public class QuestionResponse
 	{
 		public List<SQuestion> Results { get; set;}
 	}
