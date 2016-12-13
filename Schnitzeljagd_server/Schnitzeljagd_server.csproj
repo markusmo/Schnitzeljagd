@@ -31,38 +31,51 @@
     <Reference Include="ServiceStack.Interfaces">
       <HintPath>..\packages\ServiceStack.Interfaces.4.0.62\lib\portable-wp80+sl5+net40+win8+wpa81+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.Text">
-      <HintPath>..\packages\ServiceStack.Text.4.0.62\lib\net40\ServiceStack.Text.dll</HintPath>
-    </Reference>
     <Reference Include="ServiceStack.Client">
       <HintPath>..\packages\ServiceStack.Client.4.0.62\lib\net40\ServiceStack.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="ServiceStack.Common">
-      <HintPath>..\packages\ServiceStack.Common.4.0.62\lib\net40\ServiceStack.Common.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack">
       <HintPath>..\packages\ServiceStack.4.0.62\lib\net40\ServiceStack.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\packages\ServiceStack.Text.Signed.4.0.62\lib\net40\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\packages\ServiceStack.Common.Signed.4.0.62\lib\net40\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite">
+      <HintPath>..\packages\ServiceStack.OrmLite.Signed.4.0.62\lib\net45\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.MySql">
+      <HintPath>..\packages\ServiceStack.OrmLite.MySql.Signed.4.0.62\lib\net45\ServiceStack.OrmLite.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestService.cs" />
-    <Compile Include="server_classes\ISAnswer.cs" />
-    <Compile Include="server_classes\SAnswer.cs" />
-    <Compile Include="server_classes\SGPS.cs" />
-    <Compile Include="server_classes\SNumberAnswer.cs" />
-    <Compile Include="server_classes\SQRAnswer.cs" />
-    <Compile Include="server_classes\SQuestion.cs" />
-    <Compile Include="server_classes\SRights.cs" />
-    <Compile Include="server_classes\SUser.cs" />
-    <Compile Include="server_classes\SWrittenAnswer.cs" />
+    <Compile Include="database_classes\ISAnswer.cs" />
+    <Compile Include="database_classes\SAnswer.cs" />
+    <Compile Include="database_classes\SGPS.cs" />
+    <Compile Include="database_classes\SNumberAnswer.cs" />
+    <Compile Include="database_classes\SQRAnswer.cs" />
+    <Compile Include="database_classes\SQuestion.cs" />
+    <Compile Include="database_classes\SRights.cs" />
+    <Compile Include="database_classes\SUser.cs" />
+    <Compile Include="database_classes\SWrittenAnswer.cs" />
+    <Compile Include="service\Service_classes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="server_classes\" />
+    <Folder Include="database_classes\" />
+    <Folder Include="service\" />
   </ItemGroup>
   <Import Project="..\Schnitzeljagd_library\Schnitzeljagd_library.projitems" Label="Shared" Condition="Exists('..\Schnitzeljagd_library\Schnitzeljagd_library.projitems')" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

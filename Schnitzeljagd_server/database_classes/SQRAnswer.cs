@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Schnitzeljagd_library
+namespace Schnitzeljagd_server
 {
 	public class SQRAnswer : SAnswer
 	{

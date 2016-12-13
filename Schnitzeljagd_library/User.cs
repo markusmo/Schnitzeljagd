@@ -1,4 +1,4 @@
-﻿namespace Schnitzeljagd_Library
+﻿namespace Schnitzeljagd_library
 {
 	public class User
 	{

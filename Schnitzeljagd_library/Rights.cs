@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Schnitzeljagd_Library
+namespace Schnitzeljagd_library
 {
 	public enum Rights
 	{

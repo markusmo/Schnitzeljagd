@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-using Schnitzeljagd_library;
-namespace Schnitzeljagd_Library
+
+namespace Schnitzeljagd_library
 {
 	public class Question
 	{
