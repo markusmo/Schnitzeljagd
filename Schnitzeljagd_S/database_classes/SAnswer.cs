@@ -10,8 +10,7 @@ namespace Schnitzeljagd_server
 		[AutoIncrement]
 		public int Id { get; set; }
 
-		public SAnswer ()
-		{
-		}
+		[StringLength(255)]
+		public string Answer { get; set; };
 	}
 }

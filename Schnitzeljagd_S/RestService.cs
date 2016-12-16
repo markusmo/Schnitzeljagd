@@ -27,9 +27,14 @@ namespace Schnitzeljagd_server
 		public object Post(PostAnswer request)
 		{
 			//fill fields
-			var answer = new SAnswer {Id = request.Id}
+			var answer = new SAnswer { Id = request.Id };
 			Db.Save (answer);
 			return answer;
+		}
+
+		public object Get(GetLogin request)
+		{
+			return Db.Exists<SUser>(new{username=request.username, password=request.password});
 		}
 	}
 }

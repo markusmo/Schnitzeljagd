@@ -5,6 +5,7 @@ using ServiceStack;
 using ServiceStack.Data;
 using ServiceStack.OrmLite;
 using System;
+using Schnitzeljagd_server;
 
 namespace Schnitzeljagd_S
 {
@@ -15,13 +16,13 @@ namespace Schnitzeljagd_S
 
 		public class SchnitzelHost : AppSelfHostBase
 		{
-			public SchnitzelHost () : base ("Schnitzeljagd RESTservice") { } //add service
+			public SchnitzelHost () : base ("Schnitzeljagd RESTservice", typeof(RestService).Assembly) { }
 
 			public override void Configure (Container container)
 			{
-				throw new ApplicationException ("add typeof(RestService) to base()");
+				//https://github.com/ServiceStack/ServiceStack.OrmLite/blob/master/tests/ServiceStack.OrmLite.Tests/OrmLiteTestBase.cs
 				container.Register<IDbConnectionFactory> (c =>
-														  new OrmLiteConnectionFactory (":memory:", MySqlDialect.Provider)
+														  new OrmLiteConnectionFactory ("Server=localhost;Database=schnitzeljagd;UID=schnitzel;Password=schnitzel", MySqlDialect.Provider)
 														 );
 				using (var db = container.Resolve<IDbConnectionFactory> ().Open ()) {
 					db.CreateTableIfNotExists<> ();
@@ -31,7 +32,7 @@ namespace Schnitzeljagd_S
 
 		protected void Application_Start ()
 		{
-			GlobalConfiguration.Configure (WebApiConfig.Register);
+			//GlobalConfiguration.Configure (WebApiConfig.Register);
 			new SchnitzelHost ().Init (); //start
 		}
 	}

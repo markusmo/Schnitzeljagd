@@ -30,4 +30,11 @@ namespace Schnitzeljagd_server
 		//fields to add
 		public int Id { get; set; }
 	}
+
+	[Route ("api/v1/login/","GET")]
+	public class GetLogin : IReturn<bool>
+	{
+		public string username { get; set; }
+		public string password { get; set; }
+	}
 }
