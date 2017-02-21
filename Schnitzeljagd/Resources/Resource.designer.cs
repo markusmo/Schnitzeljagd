@@ -47,11 +47,11 @@ namespace Schnitzeljagd
 			// aapt resource value: 0x7f050002
 			public const int loginbutton = 2131034114;
 			
-			// aapt resource value: 0x7f050003
-			public const int myButton = 2131034115;
-			
 			// aapt resource value: 0x7f050001
 			public const int passwordText = 2131034113;
+			
+			// aapt resource value: 0x7f050003
+			public const int questlist = 2131034115;
 			
 			// aapt resource value: 0x7f050000
 			public const int usernameText = 2131034112;
@@ -73,7 +73,7 @@ namespace Schnitzeljagd
 			public const int Loginscreen = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int QuestList = 2130903041;
 			
 			static Layout()
 			{

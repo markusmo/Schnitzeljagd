@@ -2,7 +2,6 @@
 using RestSharp;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using Schnitzeljagd_Library;
 using Schnitzeljagd_library;
 
 namespace Schnitzeljagd
