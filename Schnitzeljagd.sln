@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schnitzeljagd", "Schnitzeljagd\Schnitzeljagd.csproj", "{FF09CBE2-E86C-45EE-BBDD-04A6AD7157E5}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Schnitzeljagd_library", "Schnitzeljagd_library\Schnitzeljagd_library.shproj", "{13D285E3-8365-436B-AD99-A8B64E661A10}"
@@ -8,6 +9,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schnitzeljagd_server", "Schnitzeljagd_S\Schnitzeljagd_server.csproj", "{2320A8A3-6CC4-4A69-9BC0-4A0129E00A31}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Schnitzeljagd_library\Schnitzeljagd_library.projitems*{13d285e3-8365-436b-ad99-a8b64e661a10}*SharedItemsImports = 13
+		Schnitzeljagd_library\Schnitzeljagd_library.projitems*{ff09cbe2-e86c-45ee-bbdd-04a6ad7157e5}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -21,5 +26,8 @@ Global
 		{2320A8A3-6CC4-4A69-9BC0-4A0129E00A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2320A8A3-6CC4-4A69-9BC0-4A0129E00A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2320A8A3-6CC4-4A69-9BC0-4A0129E00A31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
