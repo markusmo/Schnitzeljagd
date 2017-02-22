@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)GPS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QuestionList.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Rights.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IAnswer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Answer.cs" />
