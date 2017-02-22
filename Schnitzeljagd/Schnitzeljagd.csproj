@@ -48,6 +48,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataManagement\QuestManager.cs" />
+    <Compile Include="QuestActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LoginActivity.cs" />
@@ -71,7 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
-    <Folder Include="REST\" />
   </ItemGroup>
   <Import Project="..\Schnitzeljagd_library\Schnitzeljagd_library.projitems" Label="Shared" Condition="Exists('..\Schnitzeljagd_library\Schnitzeljagd_library.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
