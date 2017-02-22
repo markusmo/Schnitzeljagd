@@ -19,5 +19,6 @@
         android:text="Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/loginbutton" />
+        android:id="@+id/loginbutton"
+        android:tag="LoginButton" />
 </LinearLayout>
